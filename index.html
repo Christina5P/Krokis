@@ -1,224 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="House for rent in Sweden, handbok">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="rent, vacation, Sundsvall, Alnö, travel,
-     house, booking">
-   
-   
-    <!--Title-->
+    <meta name="keywords" content="rent, vacation, Sundsvall, Alnö, travel, house, booking">
     <title>Handbok</title>
-    <!-- stylesheet-->
+
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    
-
 </head>
-  
-<body >
+
+<body>
     <div class="container">
-        <h1>Handbok för Krokis</h1>
-         
+        <div class="language-links">
+            <a href="#" onclick="translateToEnglish()">English</a> | <a href="#" onclick="translateToSwedish()">Svenska</a>
+        </div>
+        
+        <h1 id="header">Handbok för Krokis</h1>
+
         <div id="page1" class="page active">
-            <div class="page-header">Här finner du all information om mitt hus. Vi hoppas att du kommer att ha en fantastisk tid!</div>
+            <div id="page1-header" class="page-header">Här finner du all information om mitt hus. Vi hoppas att du kommer att ha en fantastisk tid!</div>
             <div class="page-content">
-                <h2>Innehållsförteckning</h2>
+                <h2 id="table-of-contents">Innehållsförteckning</h2>
                 <ul>
-                    <li><a href="#page2" onclick="showPage('page2')">Wi-Fi</a></li>
-                    <li><a href="#page3" onclick="showPage('page3')">TV</a></li>
-                    <li><a href="#page4" onclick="showPage('page4')">Lampor</a></li>
-                    <li><a href="#page5" onclick="showPage('page5')">Kök - Induktionshäll</a></li>
-                    <li><a href="#page6" onclick="showPage('page6')">Kök - Ugn</a></li>
-                    <li><a href="#page7" onclick="showPage('page7')">Värme</a></li>
-                    <li><a href="#page8" onclick="showPage('page8')">Slutstädning </a></li>
-                    <li><a href="#page9" onclick="showPage('page9')">Ge mig feedback😊</a></li>
+                    <li><a href="#page2" onclick="showPage('page2')" id="wifi-link">Wi-Fi</a></li>
+                    <li><a href="#page3" onclick="showPage('page3')" id="tv-link">TV</a></li>
+                    <li><a href="#page4" onclick="showPage('page4')" id="lighting-link">Lampor</a></li>
+                    <li><a href="#page5" onclick="showPage('page5')" id="kitchen-link">Kök - Induktionshäll</a></li>
+                    <li><a href="#page6" onclick="showPage('page6')" id="oven-link">Kök - Ugn</a></li>
+                    <li><a href="#page7" onclick="showPage('page7')" id="heating-link">Värme</a></li>
+                    <li><a href="#page8" onclick="showPage('page8')" id="cleaning-link">Slutstädning</a></li>
+                    <li><a href="#page9" onclick="showPage('page9')" id="feedback-link">Ge mig feedback😊</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-</div>
-       
-      
+
         <div id="page2" class="page">
-            <div class="page-header"><h3>Wi-Fi</h3></div>
+            <div id="wifi-header" class="page-header"><h3>Wi-Fi</h3></div>
             <div class="page-content">
-                <p> Nätverket heter = Ninni <br> Lösenord = krokis0910</p>
+                <p id="wifi-content">Nätverket heter = Ninni <br> Lösenord = krokis0910</p>
             </div>
         </div>
-    </div>
-
 
         <div id="page3" class="page">
-            <div class="page-header"><h3>TV</h3></div>
+            <div id="tv-header" class="page-header"><h3>TV</h3></div>
             <div class="page-content">
-                <p> Slå på TV:</p>
                 <ul>
-                    <li>Starta TV med svarta Sharp kontrollen (se bild 1.)</li>
-                    <li>Om TV:n täcks av en blå informationsruta till höger, så försvinner den genom att trycka på end-knappen (se bild 2.)</li>
+                    <li id="tv-content">Slå på TV:n med den svarta Sharp kontrollen (se bild 1.)</li>
+                    <li id="end-knapp">Om TV:n täcks av en blå informationsruta till höger, så försvinner den genom att trycka på end-knappen (se bild 2.)</li>
                 </ul>
                 <img src="assets/img/sharp.png" alt="Sharp tv kontroll">
                 <img src="assets/img/tele2.png" alt="Tele2 tv kontroll">
                 <div>
                     <br><br>
-                    <p>TV:n på loftet har ingen chrome cast. Om den ska användas får man flytta chrome casten från TV:n i vardagsrummet.</p>
+                    <p id="loftet">TV:n på loftet har ingen chrome cast. Om den ska användas får man flytta chrome casten från TV:n i vardagsrummet.</p>
                 </div>
             </div>
         </div>
     
         <div id="page4" class="page">
-            <div class="page-header"><h3>Lampor</h3></div>
+            <div class="page-header"><h3 id="lighting-header">Lampor</h3></div>
             <div class="page-content">
-                <h4>Att tända och släcka lampor</h4>
-                <p>Dessa lampor kan styras via <img src="assets/img/plejd.png" alt="Plejd appen" style="vertical-align: middle; width: 40px; height: auto;"> appen eller uttagen på väggen:
+                <h4 id="turning-on">Att tända och släcka lampor</h4>
+                <p id="lighting-plejd">
+                    Dessa lampor kan styras via <img src="assets/img/plejd.png" alt="Plejd appen" style="vertical-align: middle; width: 40px; height: auto;"> appen eller uttagen på väggen:
                     <br>Dessa går även att dimra:
-                    <li>spotar vänstersida loftet</li>
-                    <li>spotar höger sida loftet</li>
-                    <li>Trappen och trapphuset till loftet</li>
-                    <li>spotar i badrummet</li>
-                    <li>spotar i köket</li>
-                    <li>taklampa i köket</li>
+                    <ul>
+                        <li id="spotar-venster">Spotar vänstersida loftet</li>
+                        <li id="spotar-hoger">Spotar höger sida loftet</li>
+                        <li id="trapp-hus">Trappen och trapphuset till loftet</li>
+                        <li id="spotar-badrum">Spotar i badrummet</li>
+                        <li id="spotar-kok">Spotar i köket</li>
+                        <li id="taklampa-kok">Taklampa i köket</li>
+                    </ul>
                 </p>
-                <p>Dessa lampor kan styras via <img src="assets/img/wiz.png" alt="Wiz appen" style="vertical-align: middle; width: 40px; height: auto;"> appen eller uttagen på väggen:
+                <p id="lighting-wiz">
+                    Dessa lampor kan styras via <img src="assets/img/wiz.png" alt="Wiz appen" style="vertical-align: middle; width: 40px; height: auto;"> appen eller uttagen på väggen:
                     <br> Via appen kan dessa dimras eller ändra ljussken.
                     <br> I vissa fall kan dessa tappa wifi kontakten, men det går alltid att använda vägguttagen.
                     <br> Lamporna måste vara påslagna via vägguttagen för att appen ska fungera.
-                    <li>Tak Vardagsrum</li>
-                    <li>Taklampa matbord</li>
-                    <li>Utebelysning gäststuga</li>
-                    <li>Utebelysning boden</li>
-                    <br>
-                    <p> Hallens taklampa går även att dimra via fjärrkontroll som sitter på sidan av hallgarderoben
-                        <img src="assets/img/ikea.png" alt="hall dimmer" style="vertical-align: middle; width: 50px; height: auto;"> 
-                    </p>
+                    <ul>
+                        <li id="tak-vardagsrum">Tak Vardagsrum</li>
+                        <li id="taklampa-matbord">Taklampa matbord</li>
+                        <li id="ute-gaststuga">Utebelysning gäststuga</li>
+                        <li id="ute-boden">Utebelysning boden</li>
+                    </ul>
+                </p>
+                <p id="lighting-hall">
+                    Hallens taklampa går även att dimra via fjärrkontroll som sitter på sidan av hallgarderoben </p>
+                    <img src="assets/img/ikea.png" alt="hall dimmer" style="vertical-align: middle; width: 50px; height: auto;">
+               
                 </div>
             </div>
         </div>
     
         <div id="page5" class="page">
-            <div class="page-header"><h3>Kök</h3></div>
+            <div class="page-header"><h3 id="kitchen-header">Kök</h3></div>
             <div class="page-content">
-                <h5>Induktionshäll</h5>
+                <h5 id="induktionshall">Induktionshäll</h5>
                 <br>
-                <p>Vicka upp luckan till fläkten innan plattorna sätts igång. Om du väljer symbolen A så regleras fläkten automatiskt.
-                    <br>
-                    <br>
+                <p id="kitchen-content">Vicka upp luckan till fläkten innan plattorna sätts igång. Om du väljer symbolen A så regleras fläkten automatiskt.
+                </p>
+                 <br>
+                 <br>
                 <img src="assets/img/kontrollpanel.png" alt="kontrollpanel" >
                 <img src="assets/img/spis.png" alt="spis" >
-                </p>
+              
             </div>
         </div>
-    </div>
-
+    
         <div id="page6" class="page">
-            <div class="page-header"><h3>Kök</h3></div>
+            <div class="page-header"><h3 id="oven-header">Kompaktugn med inbyggd mikro</h3></div>
             <div class="page-content">                
-                <h5>Kompaktugn med inbyggd mikro</h5>
-                <p>Ugnen fungerar som både mikro och ugn. Säkerställ så inte mikrolocket ligger i ugenen om ugnsfunktionerna ska användas.
-                    <br>
-                    <br>
+                <h5>Ugnen</h5>
+                <p id="oven-content">Ugnen fungerar som både mikro och ugn. Säkerställ så inte mikrolocket ligger i ugenen om ugnsfunktionerna ska användas.</p>
                 <img src="assets/img/ugn.png" alt="ugn" >
                 <br>
                 <img src="assets/img/ugn2.png" alt="ugn" >
-                <br>
-                <img src="assets/img/ugn3.png" alt="ugn" >
-                <br>
-                <img src="assets/img/ugn4.png" alt="ugn" >
-                <br>
-                <img src="assets/img/ugn5.png" alt="ugn" >
-                <br>
-                Hela instruktionsboken hittar du här <a href="https://www.electrolux.in/globalassets/electrolux-india/kitchen/ovens/kvlbe00x/e-kvlbe00x-um-eng.pdf" target="_blank">instruktionsboken</a>
             </div>
         </div>
-    </div>
-
+    
         <div id="page7" class="page">
-            <div class="page-header"><h3>Värme</h3></div>
+            <div class="page-header"><h3 id="heating-header">Värme</h3></div>
             <div class="page-content">
-                <h5>Luftvärmepump</h5>
-                <p> Luftvärmepumpen ställer du in med fjärrkontrollen efter hur många grader du önskar.
+                <h5 id="luftvarmepump">Luftvärmepump</h5>
+                <p id="heating-content"> Luftvärmepumpen ställer du in med fjärrkontrollen efter hur många grader du önskar.
                     Lägg på +2 grader på fjärrkontrollen för att få önskad temperatur. 
                     <br>
                     På vintern behöver fläkten vara på högsta för att kunna hålla önskad temperatur. Om man drar ned den till auto kan det kännas svalare.
                     <br> Låt dörrarna till sovrummet och trapphuset stå öppna om ni vill att värmen sprider sig till de rummen.
+                </p><br>
                     <br>
-                    <br>
-                    <img src="assets/img/varmepump1.png" alt="pump fjärrkontroll" >
+                <img src="assets/img/varmepump1.png" alt="pump fjärrkontroll" >
                     <img src="assets/img/varmepump2.png" alt="pump fjärrkontroll" >
-                </p>
+                
                 <br>
-                <h5>Vedspis /Kamin</h5>
-                <p> Det fungerar fint att elda i alla kaminer.
+                <h5 id="vedspisKamin">Vedspis /Kamin</h5>
+                <p id="vedspisKaminText"> Det fungerar fint att elda i alla kaminer.
                     <br> Att tänka på om man eldar i vedspisen i köket - spisen blir väldigt het, så man inte ställer några saker på den under eldning.
                     Om luckan är öppen behöver man vara väldigt uppmärksam, så inga gnistor hoppar ur, främst då det finns en tygmatta på golvet i köket.
                 </p>
+                
                 </div>
             </div>
-     </div>
+        </div>
     
-     <div id="page8" class="page">
-        <div class="page-header"><h3>Slutstädning</h3></div>
-        <div class="page-content">
+        <div id="page8" class="page">
+            <div class="page-header"><h3 id="cleaning-header">Slutstädning</h3></div>
+            <div class="page-content">
             <h5>Instruktioner  </h5>
-            <p> 
+            <p id="cleaning-content"> 
                 Dammsugare och städutrustning finns i garederoben i trapphuset.
-                <li>Torka rent smutsiga ytor, dammsugning och torka golv vid behov.</li>
-                <li> Rengör kaminen om ni eldat</li>
-                <li>Släng sopor i soptunnan</li>
-                <li>Kontrollera att diskmaskin är tömd (och att allt ska vara diskat)</li>
-                <li>Torka rent i kök (även ugn vid behov) </li>
-                <li>Torka rent i badrum.</li>
-                 <li>Kontrollera att tvättmaskin är tömd.</li>
-                
+                <ul>
+                    <li id="cleanSurfaces">Torka rent smutsiga ytor, dammsugning och torka golv vid behov.</li>
+                    <li id="cleanStove">Rengör kaminen om ni eldat</li>
+                    <li id="throwTrash">Släng sopor i soptunnan</li>
+                    <li id="checkDishwasher">Kontrollera att diskmaskin är tömd (och att allt ska vara diskat)</li>
+                    <li id="cleanKitchen">Torka rent i kök (även ugn vid behov)</li>
+                    <li id="cleanBathroom">Torka rent i badrum.</li>
+                    <li id="checkWashingMachine">Kontrollera att tvättmaskin är tömd.</li>
+                </ul>
+             
             </p>
            
             </div>
+            </div>
         </div>
- </div>
-
- <div id="page9" class="page">
-    <div class="page-header"><h3>Feedback</h3></div>
-    <div class="page-content">
-        <h5> Hjälp mig att göra det bättre!  </h5>
-
-        <form action="https://formspree.io/f/xanqlzzy" method="POST">
-            <label for="name">Ditt namn:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Din e-post:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="message">Ditt meddelande:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Skicka Feedback</button>
-        </form>
-       
+    
+        <div id="page9" class="page">
+            <div class="page-header"><h3>Feedback</h3></div>
+            <div class="page-content">
+                <h5 id="feedback-content">Hjälp mig att göra det bättre!</h5>
+                <form action="https://formspree.io/f/xanqlzzy" method="POST">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">e-post:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Ditt meddelande:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Skicka Feedback</button>
+                </form>
+            </div>
         </div>
-    </div>
-</div>
-
-        <!-- Navigering -->
-        <div class="navigation-buttons">
-            <button id="prevButton" class="btn btn-mild" onclick="prevPage()">Föregående</button>
-            <button id="nextButton" class="btn btn-mild" onclick="nextPage()">Nästa</button>
-        </div>
-    </div>
-
-    <div class="page-footer">
-        <a href="#page1" class="btn btn-primary">Tillbaka till Innehållsförteckning</a>
     </div>
     
-    <script src="assets/script.js"></script>
+    <!-- Navigation -->
+<div class="navigation-buttons">
+    <button id="prevButton" class="btn btn-mild" onclick="prevPage()">Föregående</button>
+    <button id="nextButton" class="btn btn-mild" onclick="nextPage()">Nästa</button>
+</div>
 
-    <!-- Länka till Bootstrap JS och Popper.js -->
+<!-- Sidfot -->
+<div class="page-footer">
+    <a id="backToContents" href="#page1" class="btn btn-primary">Tillbaka till Innehållsförteckning</a>
+</div>
+
+    <script src="assets/js/translate.js"></script>
+    <script src="assets/js/script.js"></script>
+    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-   
 </body>
 </html>

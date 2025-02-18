@@ -82,4 +82,5 @@ async function handleSubmit(event) {
     status.innerHTML = "Oops! Det blev ett problem att skicka"
   });
 }
+
 form.addEventListener("submit", handleSubmit)
