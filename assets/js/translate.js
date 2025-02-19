@@ -1,28 +1,46 @@
 
 const translations = {
-        "sv": {
-            "home": "Hem",
-            "wifi": "Wi-Fi",
-            "tv": "TV",
-            "lighting": "Lampor",
-            "kitchen": "Kök",
-            "oven": "Ugn",
-            "heating": "Värme",
-            "cleaning": "Slutstädning",
-            "feedback": "Feedback"
-        },
-        "en": {
-            "home": "Home",
-            "wifi": "Wi-Fi",
-            "tv": "TV",
-            "lighting": "Lights",
-            "kitchen": "Kitchen",
-            "oven": "Oven",
-            "heating": "Heating",
-            "cleaning": "Cleaning",
-            "feedback": "Feedback"
-        },
-
+    "home": {
+        "sv": "Hem",
+        "en": "Home"
+    },
+    "wifi": {
+        "sv": "Wi-Fi",
+        "en": "Wi-Fi"
+    },
+    "tv": {
+        "sv": "TV",
+        "en": "TV"
+    },
+    "lighting": {
+        "sv": "Lampor",
+        "en": "Lights"
+    },
+    "kitchen": {
+        "sv": "Kök",
+        "en": "Kitchen"
+    },
+    "oven": {
+        "sv": "Ugn",
+        "en": "Oven"
+    },
+    "heating": {
+        "sv": "Värme",
+        "en": "Heating"
+    },
+    "cleaning": {
+        "sv": "Slutstädning",
+        "en": "Cleaning"
+    },
+    "feedback": {
+        "sv": "Feedback",
+        "en": "Feedback"
+    },
+    "header": {
+        "sv": "Handbok för Krokis",
+        "en": "Handbook for Krokis"
+    },
+    
     "header": {
         "sv": "Handbok för Krokis",
         "en": "Handbook for Krokis"
@@ -208,8 +226,8 @@ const translations = {
         "en": "Vacuum cleaners and cleaning equipment are available in the closet in the stairwell."
     },
     "cleanSurfaces": {
-        "sv": "Torka rent smutsiga ytor, dammsugning och torka golv vid behov.",
-        "en": "Clean dirty surfaces, vacuum and mop floors as needed."
+        "sv": "Torka rent ytor, dammsuga och torka golv",
+        "en": "Wipe clean surfaces, vacuum and dry floors"
     },
     "cleanStove": {
         "sv": "Rengör kaminen om ni eldat",
@@ -220,12 +238,20 @@ const translations = {
         "en": "Throw trash in the bin."
     },
     "checkDishwasher": {
-        "sv": "Kontrollera att diskmaskin är tömd (och att allt ska vara diskat)",
+        "sv": "Kontrollera att diskmaskinen är tömd (och att allt ska vara diskat)",
         "en": "Check that the dishwasher is empty (and that everything is washed)."
     },
     "cleanKitchen": {
-        "sv": "Se till att köket är rent och i ordning.",
-        "en": "Make sure the kitchen is clean and organized."
+        "sv": "Se till att köket är rent och i ordning(även ugn).",
+        "en": "Make sure the kitchen is clean and in order (even the oven)."
+    },
+    "cleanBathroom":{
+        "sv": "Rengör toalett och badrum",
+        "en": "Clean toilet and bathroom"
+    },
+    "checkWashingMachine":{
+        "sv": "Kontrollera att tvättmaskinen är tömd",
+        "en": "Check that the washing machine is drained"
     },
     
     "feedback-content": {
