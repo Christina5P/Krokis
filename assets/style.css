@@ -70,11 +70,10 @@ h1 {
 }
 
 img {
-    width: 100%;
-    max-width: 500px;
-    height: 500px;
+    max-width: 100%;
     height: auto;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 
 .feedback-container {
